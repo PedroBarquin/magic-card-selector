@@ -18,4 +18,9 @@ class HttpClient {
     }
 }
 
+export interface Response<T> {
+    status: number;
+    data: T;
+}
+
 export const httpClient = new HttpClient();

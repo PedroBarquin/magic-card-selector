@@ -1,0 +1,28 @@
+.App .Home .app-cards-results{
+    display: grid;
+    grid-template-columns: repeat(5, 223px);
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: center;
+    padding: 30px;
+
+    
+}
+
+@media only screen and (max-width: 1360px) {
+    .App .Home .app-cards-results{
+        grid-template-columns: repeat(3, 223px);
+    }    
+}
+
+@media only screen and (max-width: 800px) {
+    .App .Home .app-cards-results{
+        grid-template-columns: repeat(2, 223px); 
+    }    
+}
+
+@media only screen and (max-width: 550px) {
+    .App .Home .app-cards-results{
+        grid-template-columns: 223px;  
+    }    
+}
